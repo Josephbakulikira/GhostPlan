@@ -1,3 +1,6 @@
+html{
+  min-height: 100%;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +8,43 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  background-size: 100%;
+  background-position: bottom;
+  min-height: 100%;
+  background-color: #7b3d3d;
+  background-image: linear-gradient(rgba(107, 0, 255, 0.15), rgb(2, 1, 2)), url('/img/backPost.jpg');
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  
 }
 
+form{
+  padding: 20px;
+  margin-top: 60px; 
+}
+
+form button, form h5{
+  margin: 20px 0;
+}
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+  border-color: #ec407a;
+  box-shadow: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+nav{
+  background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
